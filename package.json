@@ -1,0 +1,25 @@
+{
+  "name": "htmf-react",
+  "version": "1.0.0",
+  "description": "React HTMF implementation. Native javascript jsx alternative.",
+  "main": "lib/index.cjs.js",
+  "module": "lib/index.esm.js",
+  "unpkg": "lib/index.umd.min.js",
+  "scripts": {
+    "test": "jest",
+    "build": "preppy"
+  },
+  "author": "Joe Ennis",
+  "license": "ISC",
+  "peerDependencies": {
+    "react": "^16.2.0"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.7.4",
+    "jest": "^24.9.0",
+    "preppy": "^9.1.0"
+  },
+  "dependencies": {
+    "htmf": "^1.0.2"
+  }
+}

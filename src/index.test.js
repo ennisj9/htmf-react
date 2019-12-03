@@ -1,0 +1,2 @@
+import Mf from './index';
+

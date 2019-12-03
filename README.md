@@ -12,25 +12,25 @@ import Mf from 'htmf-react';
 
 function LoginBlock(){
 
-	const handleSubmit = e => {
-		//
-	}
+  const handleSubmit = e => {
+    //
+  }
 
-	return Mf($ => { $ 
-		.a('div #login')
-			.b('h3 .headerclass')
-				.text('Please login')
-			.b('form').submit(handleSubmit)
-				.c('label' {for: 'username'})
-					.text('Username')
-				.c('input .inputBox', {type: 'text', name: 'username'})
-				.c('label' {for: 'password'})
-					.text('Password')
-				.c('input .inputBox', {type: 'password', name: 'password'})
-			.b('input', {type: 'submit', value: 'Sign in'}) 
-			.b('a', {href: '/resetPassword'})
-				.text('Forgot password')
-	})
+  return Mf($ => { $ 
+    .a('div #login')
+      .b('h3 .headerclass')
+        .text('Please login')
+      .b('form').submit(handleSubmit)
+        .c('label' {for: 'username'})
+          .text('Username')
+        .c('input .inputBox', {type: 'text', name: 'username'})
+        .c('label' {for: 'password'})
+          .text('Password')
+        .c('input .inputBox', {type: 'password', name: 'password'})
+      .b('input', {type: 'submit', value: 'Sign in'}) 
+      .b('a', {href: '/resetPassword'})
+        .text('Forgot password')
+  })
 
 }
 export default LoginBlock;
@@ -53,7 +53,7 @@ Easier events:
 ```javascript
 $
 .a('div')
-	.b('div .button').click(e => alert('button clicked!'))
+  .b('div .button').click(e => alert('button clicked!'))
 ```
 
 Single element by passing in an array instead of a function:
@@ -67,9 +67,9 @@ And finally, a shorthand for creating text nodes:
 ```javascript
 $
 .a('div')
-	.b(String, 'an inline ')
-	.b('span').text('span with')
-	.b(String, ' text around it')
+  .b(String, 'an inline ')
+  .b('span').text('span with')
+  .b(String, ' text around it')
 
 //<div>an inline <span>span with</span> text around it</div>
 ```
